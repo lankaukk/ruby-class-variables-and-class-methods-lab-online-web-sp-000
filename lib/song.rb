@@ -50,11 +50,13 @@ class Song
   end 
   
   def self.artist_count 
-    
+    artist_hash = {}
+    artist_hash
   end 
   
   def self.genre_count 
-    
+    genre_hash = {}
+    genre_hash
   end
   
 end
