@@ -51,7 +51,10 @@ class Song
   
   def self.artist_count 
     artist_hash = {}
-    artist_hash[*data.group_by{ |v| v }.flat_map{ |k, v| [k, v.size] }]
+      nums.inject(Hash.new(0)) do |hash, e|
+      hash[e] += 1
+      hash
+    end
   end 
   
   def self.genre_count 
