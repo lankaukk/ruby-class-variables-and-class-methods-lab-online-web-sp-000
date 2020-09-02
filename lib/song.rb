@@ -55,7 +55,7 @@ class Song
   end 
   
   def self.genre_count 
-    genre_hash = {}
+    genre_hash = {self.genres => self.genres.uniq }
     genre_hash
   end
   
