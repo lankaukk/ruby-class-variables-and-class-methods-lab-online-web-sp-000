@@ -63,5 +63,5 @@ class Song
       hash[e] += 1
       hash
     end
-  
+  end
 end
